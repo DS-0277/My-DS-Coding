@@ -1,2 +1,5 @@
-hello = "hello world!. My name is unknown."
-print(hello)
+player_choice = "rock"
+computer_choice = "paper"
+
+print(player_choice)
+print(computer_choice)

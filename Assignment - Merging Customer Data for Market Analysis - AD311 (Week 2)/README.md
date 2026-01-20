@@ -9,4 +9,4 @@
 
 **4. Diagrams or Flowcharts:** Any diagram or flowchart is addressed via the link as follows: https://www.figma.com/board/J1toiE7nj3J8OpIncVh7jJ/Assignment---Merging-Customer-Data-for-Market-Analysis---AD311--Week-2-?node-id=0-1&t=EhHBuEEPBv3ecZ5E-1
   
-**6. YouTube Link:** The explanation is provided via the youtube link as follows: https://www.youtube.com/watch?v=oHBPpWs5_yI](https://youtu.be/IBC3EGBtJEc
+**6. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/IBC3EGBtJEc 

@@ -5,6 +5,6 @@ First, I created a new directory ('ESLint Configuration') for the project and th
 
 Note: During the configuration process, it showed that 'eslintrc.js' was replaced by 'eslint.config.js' instead.
 
-3) Issues Encountered
+2) Issues Encountered
 When I wrote a simple code without following the rules set above, it showed errors just showed in the screenshot attached with the project. The issues were fixed when I added semi colon and double-quote and ran the code checker again.
 

@@ -8,4 +8,9 @@
 
 *4. Diagrams or Flowcharts:* Any diagram or flowchart is addressed via the link as follows: https://www.figma.com/board/G8UHdCCS9HxfnWXn4hzxMw/TextWise-Solutions-Project_AD311_Week-3?node-id=0-1&t=2zKUjyCIl3Cab5Pf-1 
 
-*5. YouTube Link:* The explanation is provided via the youtube link as follows: https://youtu.be/UkTGZzlgopE 
+*5. YouTube Link:* The explanation is provided via the youtube link as follows: https://youtu.be/UkTGZzlgopE
+
+*6. Clarifying Questions:*
+    - What would be the output if it was the empty string?
+    - What would be the output if a space was used as the input?
+    - What would be the output if we place a single character as the input?

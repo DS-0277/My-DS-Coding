@@ -13,17 +13,17 @@
     URL: http://localhost:3000/about --- To Browser => --- "About page"*
 
 *b) Conditional Routing: 
-    URL: http://localhost:3000/foo --- To Browser => --- "sometimes this" & "and sometimes that"
+    URL: http://localhost:3000/foo --- To Browser => --- "sometimes this" & "and sometimes that"*
     
 *c) Regular Expression Routes:
     URL: http://localhost:3000/user --- To Browser => --- "Regular Expression works"
     URL: http://localhost:3000/username --- To Browser => --- "Regular Expression works"*
 
 *d) Dynamic Route Handling:
-    URL: http://localhost:3000/user/david --- To Browser => --- "Hello david"
+    URL: http://localhost:3000/user/david --- To Browser => --- "Hello david"*
 
 *e) Query String Handling:
-    URL: http://localhost:3000/get --- To Browser => --- "Query String Handling works"
+    URL: http://localhost:3000/get --- To Browser => --- "Query String Handling works"*
 
 *f) Error Handling:
     URL: http://localhost:3000/not-working --- To Browser => --- "404 - Not Found"*

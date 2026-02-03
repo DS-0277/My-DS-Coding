@@ -12,6 +12,6 @@
 
 *6. Clarifying Questions:*
     - Will the size of the array expand with zero duplication?
-    - What happen when we keep the empty array?
+    - What happen when we place zero in the array?
     - What happen when we place negative numbers inside the array?
     - What happen if use strings into the array instead of numerical values?

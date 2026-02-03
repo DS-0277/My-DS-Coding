@@ -6,11 +6,12 @@
 
 *3. Unit Testing:* The testing is addressed in 'unittestcases.py'.
 
-*4. Diagrams or Flowcharts:* Any diagram or flowchart is addressed via the link as follows:  
+*4. Diagrams or Flowcharts:* Any diagram or flowchart is addressed in 'Draft - Inventory Project with Array.docx'
 
-*5. YouTube Link:* The explanation is provided via the youtube link as follows: 
+*5. YouTube Link:* The explanation is provided via the youtube link as follows: https://youtu.be/hbmf3VKFS4o
 
 *6. Clarifying Questions:*
+
     - Will the size of the array expand with zero duplication?
     - What happen when we place zero in the array?
     - What happen when we place negative numbers inside the array?

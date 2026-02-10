@@ -30,7 +30,7 @@ if __name__ == "__main__":
 # 
 # ==> Tickets waiting in queue: 3
 
-# Case 10: generate_tickets(queue, 10)
+# Case 3: generate_tickets(queue, 10)
 # ==> Generated: Ticket #1 | Created at 2026-02-10 00:56:03.425901
 # ==> Generated: Ticket #2 | Created at 2026-02-10 00:56:04.834709
 # ==> Generated: Ticket #3 | Created at 2026-02-10 00:56:05.796589

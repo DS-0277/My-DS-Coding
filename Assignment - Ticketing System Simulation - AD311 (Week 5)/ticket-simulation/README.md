@@ -13,7 +13,7 @@
 
 **6. Clarifying Questions:**
 
-1) What would happen if we put 0 as the argument or parameter?
+1) What would happen if we put zero as the argument or parameter?
 2) Does the program work if we provide any negative value as the argument?
 3) Would there be any error supposing a string is placed as the argument? 
 

@@ -11,4 +11,10 @@
   
 **5. Time and Space Complexity:** The time complexity is O(1) while the space complexity is O(n).
 
+**6. Clarifying Questions:**
+
+1) What would happen if we put 0 as the argument or parameter?
+2) Does the program work if we provide any negative value as the argument?
+3) Would there be any error supposing a string is placed as the argument? 
+
 **6. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/MRSjZGADB4E 

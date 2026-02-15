@@ -1,20 +1,13 @@
-**Assignment - Ticketing System Simulation - AD311 (Week 5)**
+**Assignment - Building React Applications with Different Frameworks - AD311 (Week 6)**
 
 
-**1. Objective:** Implement a queue to manage a ticketing system where users take a number and wait for their turn to be served.
+**1. Objective:** Gain hands-on experience with various React frameworks by setting up and developing basic applications. This assignment will help you understand the unique features and development workflows of Next.js, Remix, Gatsby, and Expo.
 
-**2. Solution:** The solution to the problem is addressed in 'ticket.py', 'ticket_queue.py' and 'simulation.py'.
+**2. Solution:** The solution to the problem is addressed in a directory named 'react-frameworks'. 
+(a) Next.js - To create a new Next.js project, we run 'npx create-next-app@latest next-app'. After the installation, we run 'npm run dev' to start the project.
+(b) Remix - To initialize a new Remix project, we run 'npx create-remix remix-app'. Sometimes, it might provide guidance to run another command  instead (e.g. 'npx create-react-router@latest remix-app'). After the installation, we run 'npm run dev' to start the project.
+(c) Gatsby - To start a new Gatsby project, we run 'npx create-gatsby gatsby-app'. If there are issue with installation, there could be the case that Gatsby requires Node version 20 instead of latest ones. The change of Node version can be run by 'nvm install 20' followed by another command 'nvm use 20'. After the installation, we run 'npm run develop' to start the project.
+(d) Expo - To create a new Expo project, we run 'npx create-expo-app expo-app'. After the installation, we can run one of the following commands: (i) 'npm run android' (for Android); (ii) 'npm run ios' (for iOS); (iii) 'npm run web' (for Web).
+Note: Before we run the last step, make sure to stay in the targeted directory (e.g. 'cd next-app').
 
-**3. Unit Testing:** The testing is addressed in 'simulation.py'.
-
-**4. Diagrams or Flowcharts:** Any diagram or flowchart is addressed via the link as follows: https://www.figma.com/board/rMzOmQviAWWt2fm5jhQC3l/Assignment---Ticketing-System-Simulation---AD311--Week-5-?node-id=0-1&p=f&t=xL2DWAAjZcMbKKF6-0
-  
-**5. Time and Space Complexity:** The time complexity is O(1) while the space complexity is O(n).
-
-**6. Clarifying Questions:**
-
-1) What would happen if we put zero as the argument or parameter?
-2) Does the program work if we provide any negative value as the argument?
-3) Would there be any error supposing a string is placed as the argument? 
-
-**7. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/MRSjZGADB4E 
+**3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/DZ7btfiPY7Y

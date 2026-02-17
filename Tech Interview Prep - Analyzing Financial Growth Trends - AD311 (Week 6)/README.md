@@ -7,7 +7,7 @@
 
 **3. Unit Testing:** The testing is addressed in 'unittestcases.py'.
 
-**4. Clarifying Questions:
+**4. Clarifying Questions:**
 (a) What will happen if we put an empty array?
 (b) Is it possible to put only one single value?
 (c) Is there any issue provided that duplicated values are given?

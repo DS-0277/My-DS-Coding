@@ -16,4 +16,4 @@
 
 **6. Diagrams or Flowcharts:** Any diagram or flowchart is addressed via the link as follows: https://www.figma.com/board/9lNlDceNbDsUQV5C00xC8Z/Tech-Interview-Prep--Analyzing-Financial-Growth-Trends---AD311--Week-6-?node-id=0-1&p=f&t=Xkb73GiazI1VQPJB-0
   
-**7. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/97pxCimbAL8
+**7. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/KpEBoZxpYYo

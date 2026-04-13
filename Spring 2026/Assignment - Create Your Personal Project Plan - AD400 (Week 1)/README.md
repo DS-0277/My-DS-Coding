@@ -23,4 +23,4 @@
 
 **10. Success Metrics:** The success metric is to get 100 registered users within the first 3 months from deployment.
 
-**YouTube Link:** The explanation is provided via the youtube link as follows:  
+**YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/j3s3mGm1zCg

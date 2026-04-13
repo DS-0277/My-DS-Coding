@@ -13,7 +13,7 @@
 
 **5. Stakeholders:** The stakeholders are: (1) Developer; (2) Potential Users.
 
-**6. Timeline and Schedule:** Due to my technical constraints, it could potentially take up to around 1 year from initiation/planning to deployment. 
+**6. Timeline and Schedule:** Due to my technical constraints, it could potentially take up to around 1 year from initiation/planning to deployment. With regard to UX/UI, it could potentially take 2 months while the Frontend and Backend development may require a 3-month period each. Next, I might spend 2 month more on Database and Integration before the last 2 months on Testing/Debugging and Deployment.
 
 **7. Resource Plan:** In developing the web application, I use technologies like VSCode, PostgreSQL, Git/GitHub, JavaScript, TypeScirpt, and React, NodeJS and ExpressJS. I am also considering Codex and Claude Code if these AI-assisted coding tools could help with development to any extent. 
 

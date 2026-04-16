@@ -1,4 +1,4 @@
-**Assignment - Creating a Project Milestone Chart - AD400 (Week 1)**
+**Assignment - Creating a Project Milestone Chart - AD400 (Week 2)**
 
 
 **1. Objective:** To understand the purpose, components, and benefits of a milestone chart in project management. You will apply this knowledge by identifying key milestones for a chosen project and creating a visual milestone chart based on the concepts and examples provided by Atlassian.  

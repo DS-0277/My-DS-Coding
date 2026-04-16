@@ -1,4 +1,4 @@
-**Assignment - Create Your Personal Project Plan - AD400 (Week 1)**
+**Assignment - Create Your Personal Project Plan - AD400 (Week 2)**
 
 
 **Objective of the Assignment:** To apply fundamental project management planning principles by creating a comprehensive project plan for a personal project of your choice. This exercise will help you understand the key elements involved in defining, structuring, and planning a project from conception to completion.  

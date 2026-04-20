@@ -5,4 +5,4 @@
 
 **2. Solution:** The solution to the problem is addressed in a directory named 'task-manager-app' which is located inside another directory named 'task-manager-react-state'. To run the program, we need to make sure we are located at 'task-manager-app' by running the command prompt 'cd task-manager-app'. We can check our status by running 'pwd' in the terminal. After that, we can run the server by running 'npm run dev'. The main component file is named 'TaskManager.jsx' along with the description of test cases.
 
-**3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/Y2FLg1_tr_U
+**3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/QVuKr4RMGGE

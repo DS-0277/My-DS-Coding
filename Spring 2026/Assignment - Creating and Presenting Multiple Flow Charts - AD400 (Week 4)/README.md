@@ -15,4 +15,4 @@
 
 **7. Swimlane Flow Chart - Checkout Responsibilities:** This flow chart visualizes responsibilities between different individuals and in this case into 4 various lanes. The first lane shall be the 'Customer' where such user is dealing with various activties such as browsing products, adding items to cart, reviewing order, filling payment information and receiving confirmation email. The second lane is 'React Frontend' where frontend is responsible for displaying component, validating form inputs and showing order summary. The third lane is 'Supabase Backend' as the Supabase is responsible for authenticating user verification, fetching data from the database and sending confirmation email to users. The fourth lane is 'Stripe' which is in charge of payment processing and returning payment resutl to the frontend and backend.
 
-**8. YouTube Link:** The explanation is provided via the youtube link as follows: 
+**8. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/vptJNEYE7WA

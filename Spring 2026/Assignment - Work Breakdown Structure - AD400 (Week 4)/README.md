@@ -9,4 +9,4 @@
 
 **4. Kanban Board:** The Kanban Board is used to help track progress in a simple and visual way by organizing tasks into stages such as: To Do, In Progress, Done. This approach is useful for identifying any bottlenecks or imbalances. The details of the Kanban Board are also attached herewith.
 
-**5. YouTube Link:** The explanation is provided via the youtube link as follows: 
+**5. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/GZrBS7tNFtc

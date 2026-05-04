@@ -5,4 +5,4 @@
 
 **2. Solution:** The solution to the problem is addressed in a directory named 'crud-query-app' which is located inside another directory named 'managing-blog-posts-tanstack-query'. To run the program, we need to make sure we are located at 'crud-query-app' by running the command prompt 'cd crud-query-app'. We can check our status by running 'pwd' in the terminal. After that, we can run the server by running 'npm run dev'. The main component file is named 'index.tsx' along with the description of test cases.
 
-**3. YouTube Link:** The explanation is provided via the youtube link as follows: 
+**3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/Id2quQ5yaoE

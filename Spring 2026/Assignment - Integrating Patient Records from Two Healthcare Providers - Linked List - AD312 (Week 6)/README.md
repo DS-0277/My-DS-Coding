@@ -7,12 +7,6 @@
 
 **3. Diagrams or Flowcharts:** An image describing the assignment is attached herewith.
   
-**4. Time and Space Complexity:** The time complexity is O(n+m) and the space complexity is O(1).
+**4. Time and Space Complexity:** The time complexity is O(n+m) because we only move through each list only one time and the space complexity is O(1) since no extra linked list is created so memory stays constant regardless of input size.
 
-**5. Clarifying Questions:**
-
-1) What would happen if ?
-2) Does the program work if ?
-3) Would it return as ? 
-
-**6. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/ddQIfAVT1vk
+**5. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/ddQIfAVT1vk

@@ -5,4 +5,4 @@
 
 **2. Solution:** The solution to the problem is addressed in a directory named 'localstorage-api' which is located inside another directory named 'syncing-state-localstorage-custom-hook'. To run the program, we need to make sure we are located at 'localstorage-api' by running the command prompt 'cd localstorage-api'. We can check our status by running 'pwd' in the terminal. After that, we can run the server by running 'npm run dev'. The main component is named 'App.jsx' along with the description of test cases. The relevant file acting as the custom hook is named 'useLocalStorage.js'.
 
-**3. YouTube Link:** The explanation is provided via the youtube link as follows: 
+**3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/XdQI-nB4Xcs

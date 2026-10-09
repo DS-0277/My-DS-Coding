@@ -1,6 +1,7 @@
 # Tech Interview Prep: Core LLM Foundations & Systems Architecture - AD331 (Week 2)
 
 **1. Objective:** Week 2 materials for AD331, focused on core large language model concepts and the system considerations that affect how LLM applications behave in practice.
+
 **2. Files:**
 
 - *Slides - Core LLM Foundations and System Architecture - Week 2 - AD331_Darasen.pptx*: The Week 2 slide deck covering core LLM foundations and systems architecture.

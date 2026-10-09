@@ -5,6 +5,7 @@
 **2. Files:**
 
 - *Slides - Core LLM Foundations and System Architecture - Week 2 - AD331_Darasen.pptx*: The Week 2 slide deck covering core LLM foundations and systems architecture.
+- *Slides - Core LLM Foundations and System Architecture - Week 2 - AD331_Darasen.pdf*: A PDF version of the Week 2 slide deck for convenient viewing.
 - *Diagram-slide2.drawio.pdf*: Shows the path from raw input text through encoding, BPE tokenization, vocabulary mapping, embedding lookup, and transformer processing.
 - *Diagram-slide3.drawio.pdf*: Explains how self-attention and the KV cache affect time to first token, inter-token latency, throughput, and GPU memory use.
 - *Diagram-slide4.drawio.pdf*: Summarizes ways to manage context limits: retrieval-augmented generation, sliding windows, summarization, and prefix caching.

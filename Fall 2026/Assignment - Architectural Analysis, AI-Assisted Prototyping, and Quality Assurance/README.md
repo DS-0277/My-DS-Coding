@@ -4,4 +4,6 @@
 
 *2. Source Files:* The source files to the assignment are stored in '' folder.
 
-*3. YouTube Link:* The explanation is provided via the youtube link as follows: 
+*3. Deployment URL:* https://ds-0277.github.io/netflix-playback-engine/
+
+*4. YouTube Link:* The explanation is provided via the youtube link as follows: 

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Playback Engine Architecture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #E50914;
+        }
+        .diagram-container {
+            background-color: #222;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .step {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #333;
+            border-left: 4px solid #E50914;
+            border-radius: 4px;
+        }
+        .controls {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 8px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .network-btn {
+            background-color: #333;
+            color: white;
+        }
+        .network-btn.active {
+            background-color: #E50914;
+        }
+        .play-btn {
+            background-color: #ffffff;
+            color: #141414;
+            display: block;
+            margin: 20px auto;
+            padding: 15px 40px;
+        }
+        .play-btn:hover {
+            background-color: #ccc;
+        }
+        #messageArea {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            min-height: 30px;
+            color: #4CAF50;
+        }
+        .verification {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #aaa;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Netflix Playback Engine Architecture</h1>
+
+    <!-- 2. Simple Diagram Area -->
+    <div class="diagram-container">
+        <h3>Architecture Flow:</h3>
+        <div class="step">1. <strong>Netflix App</strong> - User clicks Play.</div>
+        <div class="step">2. <strong>Playback Services</strong> - Prepares session & routing.</div>
+        <div class="step">3. <strong>DRM License</strong> - Verifies device authorization.</div>
+        <div class="step">4. <strong>Open Connect CDN</strong> - Delivers video from nearest server.</div>
+        <div class="step">5. <strong>Video Player</strong> - Plays video & adapts to network.</div>
+        <div class="step">6. <strong>Telemetry</strong> - Monitors playback health.</div>
+    </div>
+
+    <!-- 3 & 4. Interactive Controls -->
+    <div class="controls">
+        <h3>Select Internet Connection:</h3>
+        <button class="network-btn" onclick="selectNetwork('Strong', this)">Strong Internet</button>
+        <button class="network-btn" onclick="selectNetwork('Medium', this)">Medium Internet</button>
+        <button class="network-btn" onclick="selectNetwork('Weak', this)">Weak Internet</button>
+
+        <button class="play-btn" onclick="startPlayback()">Start Playback</button>
+        
+        <!-- 5. Message Area -->
+        <div id="messageArea">Select a connection speed and press Play.</div>
+    </div>
+
+    <!-- Verification / Note -->
+    <div class="verification">
+        <strong>Verification Note:</strong> AI correctly identified Netflix Open Connect as the delivery network. I clarified that this project is a high-level educational model and does not claim to show Netflix’s private internal systems.
+    </div>
+
+    <script>
+        let currentNetwork = null;
+
+        function selectNetwork(type, buttonElement) {
+            currentNetwork = type;
+            
+            // Remove active class from all network buttons
+            const buttons = document.querySelectorAll('.network-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            buttonElement.classList.add('active');
+            
+            // Clear message area to prompt user to press play
+            document.getElementById('messageArea').innerText = "Ready to stream. Click 'Start Playback'.";
+            document.getElementById('messageArea').style.color = "#ffffff";
+        }
+
+        function startPlayback() {
+            const messageArea = document.getElementById('messageArea');
+            
+            if (!currentNetwork) {
+                messageArea.innerText = "Please select an internet connection first!";
+                messageArea.style.color = "#E50914";
+                return;
+            }
+
+            messageArea.style.color = "#4CAF50"; // Green color for success messages
+
+            if (currentNetwork === 'Strong') {
+                messageArea.innerText = "Playing in high quality.";
+            } else if (currentNetwork === 'Medium') {
+                messageArea.innerText = "Playing in HD quality.";
+            } else if (currentNetwork === 'Weak') {
+                messageArea.innerText = "Quality reduced to avoid buffering.";
+                messageArea.style.color = "#FF9800"; // Orange color for warning
+            }
+        }
+    </script>
+
+</body>
+</html>

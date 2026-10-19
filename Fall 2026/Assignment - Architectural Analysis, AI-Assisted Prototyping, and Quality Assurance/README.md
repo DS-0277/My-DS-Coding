@@ -6,4 +6,4 @@
 
 *3. Deployment URL:* https://ds-0277.github.io/netflix-playback-engine/
 
-*4. YouTube Link:* The explanation is provided via the youtube link as follows: 
+*4. YouTube Link:* The explanation is provided via the youtube link as follows: https://youtu.be/GydQOdmSmzg

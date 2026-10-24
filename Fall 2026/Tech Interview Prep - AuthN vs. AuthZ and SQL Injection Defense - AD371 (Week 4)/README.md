@@ -5,9 +5,9 @@
 
 **2. Files:**
 
-- *Slides - AuthN vs. AuthZ and SQL Injection Defense - Week 4 - AD331_Darasen.pptx*: 
-- *Slides - AuthN vs. AuthZ and SQL Injection Defense - Week 4 - AD331_Darasen.pdf*: 
-- *Diagram - .png*: 
-- *Diagram - .png*: 
+- *Slides - AuthN vs. AuthZ and SQL Injection Defense - Week 4 - AD371_Darasen.pptx*: The Week 4 slide deck covering authentication, authorization, and SQL injection defense.
+- *Slides - AuthN vs. AuthZ and SQL Injection Defense - Week 4 - AD371_Darasen.pdf*: A PDF version of the Week 4 slide deck for convenient viewing.
+- *Diagram - Authentication vs Authorization Flow.png*: Illustrates the different roles of authentication and authorization in an API request flow.
+- *Diagram - SQL Injection Defense with Parameterized Queries.png*: Compares unsafe string concatenation with safe parameterized queries and least-privilege database access.
 
 **3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/jNMMfIeLajQ

@@ -1,0 +1,119 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/Resources <<
+/Font <<
+/F1 <<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+/F2 <<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+>>
+>>
+/MediaBox [ 0.0 0.0 612 792 ]
+/Parent 2 0 R
+/Contents 5 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 3258
+>>
+stream
+0.09 0.21 0.36 rg 0 704 612 88 re f
+1 1 1 rg BT /F2 24 Tf 1 0 0 1 46 740 Tm (NORTHSTAR OFFICE SUPPLY CO.) Tj ET
+1 1 1 rg BT /F1 9 Tf 1 0 0 1 48 722 Tm (Reliable supplies for the work that matters) Tj ET
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 410 674 Tm (TAX INVOICE) Tj ET
+0 0 0 rg BT /F2 10 Tf 1 0 0 1 46 667 Tm (Invoice #:) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 108 667 Tm (INV-2024-10-17-A) Tj ET
+0 0 0 rg BT /F2 10 Tf 1 0 0 1 46 650 Tm (Invoice Date:) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 120 650 Tm (12th of Oct, 2024) Tj ET
+0 0 0 rg BT /F2 10 Tf 1 0 0 1 46 633 Tm (Payment Terms:) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 133 633 Tm (Net 30) Tj ET
+0.92 0.95 0.98 rg 372 602 195 49 re f
+0.09 0.21 0.36 rg BT /F2 10 Tf 1 0 0 1 387 632 Tm (AMOUNT DUE) Tj ET
+0.09 0.21 0.36 rg BT /F2 18 Tf 1 0 0 1 445 613 Tm ($ 1,249.50) Tj ET
+0 0 0 rg BT /F2 11 Tf 1 0 0 1 46 585 Tm (BILL TO) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 46 568 Tm (Acme Creative Studio) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 46 554 Tm (Attn: Accounts Payable) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 46 540 Tm (1450 Market Street, Suite 8B) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 46 526 Tm (San Francisco, CA 94102) Tj ET
+0.09 0.21 0.36 rg 46 492 521 23 re f
+1 1 1 rg BT /F2 8 Tf 1 0 0 1 52 500 Tm (QTY) Tj ET
+1 1 1 rg BT /F2 8 Tf 1 0 0 1 88 500 Tm (ITEM / DESCRIPTION) Tj ET
+1 1 1 rg BT /F2 8 Tf 1 0 0 1 316 500 Tm (UNIT PRICE) Tj ET
+1 1 1 rg BT /F2 8 Tf 1 0 0 1 373 500 Tm (DISC.) Tj ET
+1 1 1 rg BT /F2 8 Tf 1 0 0 1 448 500 Tm (LINE TOTAL) Tj ET
+0.96 0.97 0.99 rg 46 460 521 25 re f
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 55 472 Tm (2) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 88 472 Tm (Ergonomic desk chair - charcoal gray) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 390 472 Tm ($399.00) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 373 472 Tm (-) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 505 472 Tm ($798.00) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 55 447 Tm (3) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 88 447 Tm (USB-C docking station \(65W\)) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 390 447 Tm ($89.50) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 373 447 Tm (10%) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 505 447 Tm ($241.65) Tj ET
+0.96 0.97 0.99 rg 46 410 521 25 re f
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 55 422 Tm (1) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 88 422 Tm (Delivery and installation service) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 390 422 Tm ($95.00) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 373 422 Tm (-) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 505 422 Tm ($95.00) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 415 375 Tm (Subtotal:) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 505 375 Tm ($1,134.65) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 397 357 Tm (Sales tax \(10%\):) Tj ET
+0 0 0 rg BT /F1 10 Tf 1 0 0 1 505 357 Tm ($114.85) Tj ET
+0 0 0 rg BT /F2 12 Tf 1 0 0 1 398 330 Tm (TOTAL DUE:) Tj ET
+0 0 0 rg BT /F2 12 Tf 1 0 0 1 480 330 Tm (USD 1,249.50) Tj ET
+1 0.95 0.8 rg 46 235 521 56 re f
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 58 276 Tm (Note to Accounts Payable) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 58 260 Tm (Please reference INV-2024-10-17-A with your payment. Amount is payable in U.S. dollars.) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 58 248 Tm (Thank you for your business!) Tj ET
+0.4 0.4 0.4 rg BT /F1 7 Tf 1 0 0 1 128 34 Tm (Northstar Office Supply Co. | 800 Harbor Way, Oakland, CA 94607 | support@northstar.example) Tj ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000162 00000 n 
+0000000407 00000 n 
+trailer
+<<
+/Size 6
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+3717
+%%EOF

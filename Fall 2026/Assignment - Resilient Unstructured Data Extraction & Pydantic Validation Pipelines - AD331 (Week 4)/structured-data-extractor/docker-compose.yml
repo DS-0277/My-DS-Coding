@@ -1,0 +1,9 @@
+services:
+  extractor:
+    build: .
+    ports:
+      - "8501:8500"
+    env_file:
+      - .env
+    volumes:
+      - ./dlq:/app/dlq

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Authentication and RBAC Demo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+    form, section { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    input, button { display: block; margin: .5rem 0; padding: .55rem; }
+    button { cursor: pointer; }
+    #result { white-space: pre-wrap; background: #f5f5f5; padding: 1rem; min-height: 3rem; }
+  </style>
+</head>
+<body>
+  <h1>Authentication and RBAC Demo</h1>
+  <p>Registration creates a regular User account. Admin accounts are created through controlled server setup.</p>
+
+  <section>
+    <h2>Register</h2>
+    <form id="register-form">
+      <input name="username" minlength="3" maxlength="32" pattern="[A-Za-z0-9_]+" placeholder="Username" required>
+      <input name="password" type="password" minlength="8" maxlength="128" placeholder="Password" required>
+      <button>Register as User</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Login</h2>
+    <form id="login-form">
+      <input name="username" placeholder="Username" required>
+      <input name="password" type="password" placeholder="Password" required>
+      <button>Login</button>
+    </form>
+    <button id="logout">Logout</button>
+  </section>
+
+  <section>
+    <h2>Protected resources</h2>
+    <button data-endpoint="/dashboard">Open User Dashboard</button>
+    <button data-endpoint="/admin">Open Admin Resource</button>
+  </section>
+
+  <h2>Result</h2>
+  <div id="result">No request yet.</div>
+  <script>
+    const result = document.querySelector('#result');
+    async function request(url, options = {}) {
+      const response = await fetch(url, { credentials: 'same-origin', ...options });
+      const data = await response.json().catch(() => ({}));
+      result.textContent = `${response.status} ${response.statusText}\n${JSON.stringify(data, null, 2)}`;
+    }
+    document.querySelector('#register-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      request('/register', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(event.target))) });
+    });
+    document.querySelector('#login-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      request('/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(event.target))) });
+    });
+    document.querySelector('#logout').addEventListener('click', () => request('/logout', { method: 'POST' }));
+    document.querySelectorAll('[data-endpoint]').forEach((button) => button.addEventListener('click', () => request(button.dataset.endpoint)));
+  </script>
+</body>
+</html>

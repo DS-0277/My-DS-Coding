@@ -11,4 +11,4 @@
 - *Diagram - Load Balancer Health Checks.png*: Shows load balancing across healthy application servers while isolating failed servers.
 - *Diagram - VPN Secure Private VPC Connectivity.png*: Illustrates encrypted VPN access from a developer to private VPC resources.
 
-**3. YouTube Link:** The explanation is provided via the youtube link as follows:
+**3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/FHKBGQMBu6s

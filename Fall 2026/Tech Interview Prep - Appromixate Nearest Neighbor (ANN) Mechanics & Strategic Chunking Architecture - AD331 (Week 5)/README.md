@@ -12,4 +12,4 @@
 - *Diagram - Strategic Document Chunking.png*: Illustrates chunking approaches for technical and narrative documents.
 - *Diagram - Parent-Child Retrieval Architecture.png*: Explains parent-child retrieval for precise search and full-context answers.
 
-**3. YouTube Link:** The explanation is provided via the youtube link as follows: 
+**3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/SeOgvncGRgE

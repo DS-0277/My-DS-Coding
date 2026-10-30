@@ -5,10 +5,10 @@
 
 **2. Files:**
 
-- *Slides - 
-- *Slides - 
-- *Diagram - 
-- *Diagram -
-- *Diagram - 
+- *Slides - Tech Interview Prep - CDNs, Load Balancers, and Secure Connectivity - Week 5 - AD371_Darasen.pptx*: The Week 5 slide deck covering CDNs, load balancers, and secure connectivity.
+- *Slides - Tech Interview Prep - CDNs, Load Balancers, and Secure Connectivity - Week 5 - AD371_Darasen.pdf*: A PDF version of the Week 5 slide deck for convenient viewing.
+- *Diagram - CDN Edge Caching Request Flow.png*: Compares direct origin requests with CDN edge caching.
+- *Diagram - Load Balancer Health Checks.png*: Shows load balancing across healthy application servers while isolating failed servers.
+- *Diagram - VPN Secure Private VPC Connectivity.png*: Illustrates encrypted VPN access from a developer to private VPC resources.
 
 **3. YouTube Link:** The explanation is provided via the youtube link as follows:

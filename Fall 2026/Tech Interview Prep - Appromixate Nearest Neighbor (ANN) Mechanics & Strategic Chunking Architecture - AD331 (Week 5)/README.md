@@ -5,11 +5,11 @@
 
 **2. Files:**
 
-- *Slides - 
-- *Slides - 
-- *Diagram - 
-- *Diagram - 
-- *Diagram - 
-- *Diagram - 
+- *Slides - Approximate Nearest (ANN) Mechanics & Strategic Chunking Architecture - Week 5 - AD331_Darasen.pptx*: The Week 5 slide deck covering ANN mechanics and strategic chunking architecture.
+- *Slides - Approximate Nearest (ANN) Mechanics & Strategic Chunking Architecture - Week 5 - AD331_Darasen.pdf*: A PDF version of the Week 5 slide deck for convenient viewing.
+- *Diagram - HNSW vs IVF-PQ Search Methods.png*: Compares graph-based HNSW search with cluster-based IVF-PQ search.
+- *Diagram - ANN Speed Accuracy and Memory Trade-Off.png*: Shows the accuracy, speed, and memory trade-offs in ANN tuning.
+- *Diagram - Strategic Document Chunking.png*: Illustrates chunking approaches for technical and narrative documents.
+- *Diagram - Parent-Child Retrieval Architecture.png*: Explains parent-child retrieval for precise search and full-context answers.
 
 **3. YouTube Link:** The explanation is provided via the youtube link as follows: 

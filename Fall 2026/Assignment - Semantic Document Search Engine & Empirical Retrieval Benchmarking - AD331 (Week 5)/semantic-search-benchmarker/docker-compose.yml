@@ -1,0 +1,14 @@
+services:
+  searchworkbench:
+    build: .
+    ports:
+      - "8001:8000"
+    environment:
+      STREAMLIT_SERVER_HEADLESS: "true"
+      STREAMLIT_SERVER_ADDRESS: "0.0.0.0"
+      STREAMLIT_SERVER_PORT: "8000"
+    volumes:
+      - model-cache:/root/.cache/huggingface
+
+volumes:
+  model-cache:

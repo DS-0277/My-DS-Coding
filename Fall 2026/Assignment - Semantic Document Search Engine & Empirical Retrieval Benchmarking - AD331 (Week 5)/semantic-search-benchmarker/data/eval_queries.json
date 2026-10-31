@@ -1,0 +1,17 @@
+[
+  {"query_id": "q01", "query": "What is HTTP used for?", "type": "exact", "relevant_sections": ["overview-of-http"]},
+  {"query_id": "q02", "query": "How does a browser communicate with a web server?", "type": "conceptual", "relevant_sections": ["overview-of-http"]},
+  {"query_id": "q03", "query": "Which HTTP method retrieves a resource?", "type": "exact", "relevant_sections": ["http-request-methods"]},
+  {"query_id": "q04", "query": "Which method partially changes an existing resource?", "type": "exact", "relevant_sections": ["http-request-methods"]},
+  {"query_id": "q05", "query": "How can a client ask for information without changing the server state?", "type": "conceptual", "relevant_sections": ["http-request-methods"]},
+  {"query_id": "q06", "query": "What does a 404 response mean?", "type": "exact", "relevant_sections": ["http-response-status-codes"]},
+  {"query_id": "q07", "query": "Which status code indicates that authentication is required?", "type": "exact", "relevant_sections": ["http-response-status-codes", "http-authentication"]},
+  {"query_id": "q08", "query": "What is the difference between a client error and a server error?", "type": "conceptual", "relevant_sections": ["http-response-status-codes"]},
+  {"query_id": "q09", "query": "Which header carries credentials for a user agent?", "type": "exact", "relevant_sections": ["http-headers"]},
+  {"query_id": "q10", "query": "How does a request communicate extra information to a server?", "type": "conceptual", "relevant_sections": ["http-headers"]},
+  {"query_id": "q11", "query": "What response header tells a client how to authenticate?", "type": "exact", "relevant_sections": ["http-authentication"]},
+  {"query_id": "q12", "query": "How does HTTP authentication restrict access to a resource?", "type": "conceptual", "relevant_sections": ["http-authentication"]},
+  {"query_id": "q13", "query": "What does Cache-Control control?", "type": "exact", "relevant_sections": ["http-caching", "http-headers"]},
+  {"query_id": "q14", "query": "Why might a browser reuse an earlier response instead of downloading it again?", "type": "conceptual", "relevant_sections": ["http-caching"]},
+  {"query_id": "q15", "query": "What are the two types of HTTP messages?", "type": "exact", "relevant_sections": ["overview-of-http"]}
+]

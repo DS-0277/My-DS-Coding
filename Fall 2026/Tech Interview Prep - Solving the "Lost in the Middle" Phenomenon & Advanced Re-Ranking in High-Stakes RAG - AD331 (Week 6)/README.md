@@ -4,11 +4,11 @@
 
 **2. Files:**
 
-- *Slides*
-- *Slides*
-- *Diagram*
-- *Diagram*
-- *Diagram*
-- *Diagram*
+- *Slides - Solving the "Lost in the Middle" Phenomenon & Advanced Re-Ranking in High-Stakes RAG - Week 6 - AD331_Darasen.pptx*: The Week 6 slide deck covering context-position effects and advanced RAG re-ranking.
+- *Slides - Solving the "Lost in the Middle" Phenomenon & Advanced Re-Ranking in High-Stakes RAG - Week 6 - AD331_Darasen.pdf*: A PDF version of the Week 6 slide deck for convenient viewing.
+- *Diagram - Lost in the Middle Phenomenon.png*: Illustrates the reduced use of critical information placed in the middle of long prompts.
+- *Diagram - Re-Ranking Approaches.png*: Compares bi-encoders, cross-encoders, and late-interaction re-ranking.
+- *Diagram - High-Stakes RAG Retrieval Pipeline.png*: Shows a high-stakes RAG workflow from retrieval through compression and cited synthesis.
+- *Diagram - Contextual Placement Strategies.png*: Describes edge-priority placement, document isolation, and citation grounding.
 
 **3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/pdc-usNE1ZQ

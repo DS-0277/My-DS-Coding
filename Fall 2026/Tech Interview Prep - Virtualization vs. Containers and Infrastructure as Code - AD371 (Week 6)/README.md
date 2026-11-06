@@ -4,9 +4,9 @@
 
 **2. Files:**
 
-- *Slides*
-- *Slides*
-- *Diagram*
-- *Diagram*
+- *Slides - Tech Interview Prep - Virtualization vs. Containers and Infrastructure as Code - Week 6 - AD371_Darasen.pptx*: The Week 6 slide deck covering virtualization, containers, and infrastructure as code.
+- *Slides - Tech Interview Prep - Virtualization vs. Containers and Infrastructure as Code - Week 6 - AD371_Darasen.pdf*: A PDF version of the Week 6 slide deck for convenient viewing.
+- *Diagram - Virtual Machines vs Containers.png*: Compares the architecture, resource footprint, startup time, and isolation of virtual machines and containers.
+- *Diagram - Infrastructure as Code Workflow.png*: Illustrates the infrastructure as code workflow from a Git repository through validation and cloud deployment.
 
 **3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/WAaxFVengmc

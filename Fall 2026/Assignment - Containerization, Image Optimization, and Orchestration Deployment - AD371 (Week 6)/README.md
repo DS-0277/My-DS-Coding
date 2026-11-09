@@ -4,4 +4,4 @@
 
 *2. Source Files:* The source files to the assignment are stored in 'container-orchestration' folder.
 
-*3. YouTube Link:* The explanation is provided via the youtube link as follows: 
+*3. YouTube Link:* The explanation is provided via the youtube link as follows: https://youtu.be/AuvsDzJxRag

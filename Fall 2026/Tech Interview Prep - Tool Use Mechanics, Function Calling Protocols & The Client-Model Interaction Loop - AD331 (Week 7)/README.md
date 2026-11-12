@@ -4,11 +4,11 @@
 
 **2. Files:**
 
-- *Slides* 
-- *Slides* 
-- *Diagram* 
-- *Diagram*
-- *Diagram*
-- *Diagram*
+- *Slides - Tool Use Mechanics, Function Calling Protocols & The Client-Model Interaction Loop - Week 7 - AD331_Darasen.pptx*: The Week 7 slide deck covering tool use, function calling, and the client-model interaction loop.
+- *Slides - Tool Use Mechanics, Function Calling Protocols & The Client-Model Interaction Loop - Week 7 - AD331_Darasen.pdf*: A PDF version of the Week 7 slide deck for convenient viewing.
+- *Diagram - Application Model and MCP Tool Loop.png*: Shows the application as the communication layer between the user, AI model, MCP server, and tools.
+- *Diagram - Function Calling Schema and Payload.png*: Illustrates how a tool schema constrains an AI model's structured function-call payload.
+- *Diagram - Tool Use Client Model Interaction Sequence.png*: Maps the end-to-end sequence from user request through tool execution and final answer delivery.
+- *Diagram - MCP Standardized Tool Integration.png*: Shows how a host application connects to Slack, Gmail, and Postgres through MCP servers and a shared protocol.
 
 **3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/9ZdsdO3wVJY

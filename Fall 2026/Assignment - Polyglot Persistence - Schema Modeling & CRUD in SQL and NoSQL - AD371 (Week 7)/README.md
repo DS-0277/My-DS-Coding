@@ -1,7 +1,7 @@
 # Assignment - Polyglot Persistence - Schema Modeling & CRUD in SQL and NoSQL - AD371 (Week 7)
 
-**1. Objective:**
+*1. Objective:* Application architects frequently implement polyglot persistence—matching distinct data workloads to the database engine optimized for their access patterns. However, developers often make two fatal mistakes when using AI tools for database design: (1) Treating NoSQL like SQL: Designing normalized, multi-collection document stores requiring expensive application-side manual joins; (2) Ignoring Constraints & Concurrency in SQL: Omitting foreign keys, indexing strategies, cascade rules, or transaction boundaries in relational schemas. In this assignment, you will: (1) Design a domain data model for a specific feature (e.g., e-commerce orders, blogging/comments platform, project management tasks, or user profiles with activity feeds); (2) Use an AI tool to generate the initial schema definitions and CRUD implementation for both a relational database (e.g., PostgreSQL, MySQL, SQLite) and a NoSQL database (e.g., MongoDB, DynamoDB, Redis, CouchDB); (3) Audit and verify the AI-generated schemas against relational normalization rules (3NF) and NoSQL query-driven denormalization patterns; (4) Implement and test full CRUD operations (Create, Read, Update, Delete) across both engines through a unified API or UI; (5) Execute a structured Web Project QA test suite to prove transactional integrity and error handling; (6) Submit your GitHub repository, live URL (if applicable), AI prompt log, and a video walkthrough demonstrating functionality and testing.
 
-**2. Files:**
+*2. Source Files:* The source files to the assignment are stored in 'polyglot-database-crud' folder.
 
-**3. YouTube Link:**
+*3. YouTube Link:* The explanation is provided via the youtube link as follows: https://youtu.be/2XiI3S5Xdtk

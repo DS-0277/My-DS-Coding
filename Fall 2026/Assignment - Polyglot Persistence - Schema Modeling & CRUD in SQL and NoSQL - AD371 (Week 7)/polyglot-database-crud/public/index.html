@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project and Task Manager</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Project and Task Manager</h1>
+    <p class="intro">Create projects and add tasks using the Express API.</p>
+
+    <section class="card">
+      <h2>Create a Project</h2>
+      <form id="project-form">
+        <label for="project-name">Project name</label>
+        <input id="project-name" name="name" required maxlength="120">
+        <label for="project-description">Description</label>
+        <textarea id="project-description" name="description" rows="4"></textarea>
+        <button type="submit">Create Project</button>
+      </form>
+      <p id="project-message" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <h2>Create a Task</h2>
+      <form id="task-form">
+        <label for="project-id">Project ID</label>
+        <input id="project-id" name="projectId" required>
+        <label for="task-title">Task title</label>
+        <input id="task-title" name="title" required maxlength="160">
+        <label for="task-description">Description</label>
+        <textarea id="task-description" name="description" rows="4"></textarea>
+        <button type="submit">Create Task</button>
+      </form>
+      <p id="task-message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

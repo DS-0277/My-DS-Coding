@@ -1,0 +1,16 @@
+:root { font-family: Arial, sans-serif; color: #1f2937; background: #f3f4f6; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { width: min(900px, 100% - 2rem); margin: 0 auto; padding: 2rem 0; }
+h1, h2 { color: #173b63; }
+.intro { color: #4b5563; }
+.card { background: white; border-radius: 10px; padding: 1.25rem; margin: 1rem 0; box-shadow: 0 2px 10px #00000012; }
+form { display: grid; gap: .55rem; }
+input, textarea { width: 100%; border: 1px solid #9ca3af; border-radius: 6px; padding: .7rem; font: inherit; }
+textarea { resize: vertical; min-height: 5rem; overflow-wrap: anywhere; }
+button { width: fit-content; border: 0; border-radius: 6px; padding: .7rem 1rem; color: white; background: #1d5d91; font-weight: 700; cursor: pointer; }
+button:hover { background: #164a74; }
+.message { min-height: 1.3rem; font-weight: 600; overflow-wrap: anywhere; }
+.message.error { color: #b42318; }
+.message.success { color: #16704a; }
+@media (max-width: 600px) { .container { width: min(100% - 1rem, 900px); padding-top: 1rem; } h1 { font-size: 1.65rem; } .card { padding: 1rem; } button { width: 100%; } }

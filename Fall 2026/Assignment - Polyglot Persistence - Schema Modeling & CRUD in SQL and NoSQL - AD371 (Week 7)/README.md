@@ -4,4 +4,4 @@
 
 *2. Source Files:* The source files to the assignment are stored in 'polyglot-database-crud' folder.
 
-*3. YouTube Link:* The explanation is provided via the youtube link as follows: https://youtu.be/2XiI3S5Xdtk
+*3. YouTube Link:* The explanation is provided via the youtube link as follows: https://youtu.be/3842f8QBDvY

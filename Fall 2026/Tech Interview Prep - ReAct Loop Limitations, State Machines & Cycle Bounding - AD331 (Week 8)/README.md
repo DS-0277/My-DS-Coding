@@ -1,7 +1,14 @@
 # Tech Interview Prep - ReAct Loop Limitations, State Machines & Cycle Bounding - AD331 (Week 8)
 
-**1. Objective:**
+**1. Objective:** The ReAct (Reasoning + Acting) pattern remains one of the foundational building blocks of modern agentic workflows. By interleaving chain-of-thought scratchpads with tool invocation and observation steps, ReAct enables models to tackle multi-step problems dynamically. However, naive implementations—such as wrapping a ReAct agent in an unconstrained while True loop—break down under production workloads: (a) Compounding Context Exhaustion: Each cycle appends thought traces and tool outputs into an expanding prompt, accelerating token costs and degrading attention; (b) Semantic Goal Drift: Without deterministic state tracking, models lose focus on the original goal after unexpected tool responses; (c) Infinite Hallucinated Loops: Facing ambiguous errors, models frequently fall into repetitive loops, calling the same failing tool with identical arguments or rationalizing fake successes. In a technical interview for a Senior Agentic Systems Engineer, Staff AI Architect, or Autonomous Systems Lead, candidates must demonstrate how to transition from brittle prompt-based loops to robust, deterministic state machines (such as Finite State Machines or Directed Acyclic/Cyclic State Graphs like LangGraph) equipped with strict cycle bounding and circuit breakers. Demonstrate technical mastery of autonomous agent architectures, control flow stability, and failure mitigation by: (1) Deconstructing the architectural and cognitive limitations of standard ReAct loops (semantic drift, compounding context growth, repetitive tool hallucination, and lack of global convergence criteria); (2) Explaining how deterministic State Machines and State Graphs (e.g., FSMs, graph-based runtimes) replace unconstrained loops with explicit states, deterministic transitions, and global state persistence; (3) Formulating engineering controls to guarantee loop termination and cost containment using cycle bounds, circuit breakers, idempotency keys, and tool call payload hashing; (4) Designing enterprise recovery patterns, including graceful degradation, human-in-the-loop (HITL) checkpoints, and dead-letter state rollbacks.
 
 **2. Files:**
 
-**3. YouTube Link:**
+- *Slides*
+- *Slides*
+- *Diagram*
+- *Diagram*
+- *Diagram*
+- *Diagram*
+
+**3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/GvdWRzGD4V8

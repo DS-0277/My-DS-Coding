@@ -4,11 +4,11 @@
 
 **2. Files:**
 
-- *Slides*
-- *Slides*
-- *Diagram*
-- *Diagram*
-- *Diagram*
-- *Diagram*
+- *Slides - ReAct Loop Limitations, State Machines & Cycle Bounding - Week 8 - AD331_Darasen.pptx*: The Week 8 slide deck covering ReAct limitations, state machines, and cycle bounding.
+- *Slides - ReAct Loop Limitations, State Machines & Cycle Bounding - Week 8 - AD331_Darasen.pdf*: A PDF version of the Week 8 slide deck for convenient viewing.
+- *Diagram - ReAct Loop Failure Modes.png*: Shows context bloat, repeated tool failures, and semantic goal drift caused by unconstrained ReAct loops.
+- *Diagram - Deterministic State Graph.png*: Illustrates explicit plan, execution, evaluation, review, and termination states backed by durable state.
+- *Diagram - Runtime Cycle Bounding and Circuit Breaker.png*: Shows runtime limits, duplicate-call detection, and a circuit breaker for unsafe or over-budget tool use.
+- *Diagram - Controlled Failure Recovery.png*: Maps controlled recovery paths for degraded completion, human review, and rollback or compensation.
 
 **3. YouTube Link:** The explanation is provided via the youtube link as follows: https://youtu.be/GvdWRzGD4V8

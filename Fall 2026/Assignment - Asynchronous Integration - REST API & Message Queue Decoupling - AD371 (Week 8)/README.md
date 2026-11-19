@@ -1,7 +1,7 @@
 # Assignment - Asynchronous Integration - REST API & Message Queue Decoupling - AD371 (Week 8)
 
-**1. Objective:**
+*1. Objective:* In enterprise architectures, direct synchronous HTTP calls between microservices create temporal coupling—if a downstream service is slow or crashes, the upstream API stalls and fails. Architects solve this by placing an asynchronous message queue (e.g., RabbitMQ, Redis Streams/BullMQ, AWS SQS) between the ingress API and background worker pools. However, when developers use AI tools to generate asynchronous messaging workflows, LLMs frequently introduce critical anti-patterns: (a) Using synchronous in-memory arrays or promises and calling them a "queue"; (b) Omitting message acknowledgments (ACK/NACK), which causes lost messages during worker crashes; (c) Failing to implement consumer idempotency, leading to duplicated transactions when messages are redelivered; (d) Lacking a Dead-Letter Queue (DLQ) to isolate malformed "poison pill" payloads. In this assignment, you will: (1) Design and implement a synchronous REST API that accepts user requests (e.g., order placement, report generation, video encoding, or notification dispatch); (2) Implement an asynchronous message broker/queue that decouples request ingestion from background processing; (3) Use an AI tool to generate an initial draft of the API producer, message broker integration, and background worker consumer; (4) Audit and verify the AI-generated code against distributed messaging standards (ACK/NACK handling, worker retry loops, idempotency, and status polling); (5) Execute a structured Web Project QA test suite to prove decoupled processing, crash recovery, and queue draining; (6) Submit your GitHub repository, live URL (if applicable), AI prompt log, and a video walkthrough demonstrating functionality and testing.
 
-**2. Files:**
+*2. Source Files:* The source files to the assignment are stored in '' folder.
 
-**3. YouTube Link:**
+*3. YouTube Link:* The explanation is provided via the youtube link as follows: 

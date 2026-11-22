@@ -41,3 +41,28 @@ def test_sha256_payload_hash_tripping() -> None:
 
     assert first == second
     assert is_consecutive_repeat([first], second)
+
+
+def test_identical_tool_call_routes_to_error_before_cycle_limit() -> None:
+    """The graph blocks an immediate duplicate tool request after two cycles."""
+    repeated_call = {"service_name": "auth-service"}
+    graph = build_graph(
+        model=ScriptedModel(
+            [
+                tool_call_message("query_service_metrics", repeated_call, "first-call"),
+                tool_call_message("query_service_metrics", repeated_call, "second-call"),
+            ]
+        ),
+        checkpointer=MemorySaver(),
+    )
+
+    result = graph.invoke(
+        {"messages": [HumanMessage(content="Check auth-service twice.")]},
+        {"configurable": {"thread_id": "duplicate-call"}},
+    )
+
+    assert result["iteration_count"] == 2
+    assert result["iteration_count"] < MAX_ITERATIONS
+    assert result["error"] == "Repeated tool call detected; execution stopped safely."
+    assert "circuit_breaker:repeat" in result["execution_log"]
+    assert result["execution_log"][-1] == "error_node"

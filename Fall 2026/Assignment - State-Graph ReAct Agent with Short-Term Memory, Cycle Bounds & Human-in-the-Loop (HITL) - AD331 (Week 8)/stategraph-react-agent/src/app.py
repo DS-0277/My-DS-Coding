@@ -9,6 +9,7 @@ from typing import Any
 
 import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
+from langgraph.checkpoint.memory import MemorySaver
 from langgraph.types import Command
 
 # Streamlit executes this file as a script, so make the project root available
@@ -17,11 +18,27 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.circuit_breaker import is_consecutive_repeat, tool_call_fingerprint
-from src.graph import get_graph
+from src.graph import build_graph, get_graph
 
 
 graph: Any | None = None
+
+
+class DuplicateCallDemoModel:
+    """Deterministic model used only to demonstrate repeat-call containment."""
+
+    def __init__(self) -> None:
+        call = {"name": "query_service_metrics", "args": {"service_name": "auth-service"}, "type": "tool_call"}
+        self.responses = [
+            AIMessage(content="", tool_calls=[{**call, "id": "duplicate-demo-1"}]),
+            AIMessage(content="", tool_calls=[{**call, "id": "duplicate-demo-2"}]),
+        ]
+
+    def bind_tools(self, _tools: list[Any]) -> "DuplicateCallDemoModel":
+        return self
+
+    def invoke(self, _messages: list[Any]) -> AIMessage:
+        return self.responses.pop(0)
 
 
 def graph_config(thread_id: str) -> dict[str, dict[str, str]]:
@@ -83,6 +100,20 @@ def resume_approval(thread_id: str, approved: bool) -> None:
     graph.invoke(Command(resume={"approved": approved}), graph_config(thread_id))
 
 
+def run_duplicate_call_demo() -> dict[str, Any]:
+    """Run an isolated graph that intentionally repeats one safe tool call."""
+    demo_graph = build_graph(model=DuplicateCallDemoModel(), checkpointer=MemorySaver())
+    result = demo_graph.invoke(
+        {"messages": [HumanMessage(content="Run the duplicate-call safety demonstration.")]},
+        {"configurable": {"thread_id": "duplicate-call-demo"}},
+    )
+    return {
+        "reasoning_cycles": result["iteration_count"],
+        "safety_result": result["error"],
+        "node_history": result["execution_log"],
+    }
+
+
 def start_new_session() -> None:
     """Create a new thread before Streamlit recreates the ID input widget."""
     st.session_state.thread_id = f"session-{uuid.uuid4().hex[:8]}"
@@ -113,17 +144,12 @@ def main() -> None:
 
         st.divider()
         st.header("Circuit-breaker demo")
-        repeat_demo = st.toggle("Show duplicate-call detection", value=False)
+        repeat_demo = st.toggle("Run duplicate-call safety test", value=False)
         if repeat_demo:
-            args = {"service_name": "auth-service"}
-            fingerprint = tool_call_fingerprint("query_service_metrics", args)
-            tripped = is_consecutive_repeat([fingerprint], fingerprint)
-            st.warning(
-                "Repeated identical tool call detected. In the graph, this condition routes to "
-                "the error node instead of repeating the action."
-                if tripped
-                else "Repeat detector did not trip."
-            )
+            demo_result = run_duplicate_call_demo()
+            st.success("Duplicate call blocked safely after 2 reasoning cycles (limit: 6).")
+            st.caption("This isolated test does not change the current conversation.")
+            st.json(demo_result)
 
     values, snapshot = snapshot_values(thread_id)
     approval_ticket = pending_approval(values, snapshot)

@@ -206,3 +206,7 @@ def main() -> None:
             st.code(" → ".join(history))
         else:
             st.caption("Send a request to begin the graph.")
+
+
+if __name__ == "__main__":
+    main()

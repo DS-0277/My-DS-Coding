@@ -53,6 +53,7 @@ def test_rejection_recovery_bypasses_sensitive_tool() -> None:
     result = graph.invoke(Command(resume={"approved": False}), config)
 
     assert result["approval_status"] == "REJECTED"
+    assert result["pending_approval"] is None
     assert result["rejected_tool_hashes"]
     assert not any("SIMULATED: scaled" in str(message.content) for message in result["messages"])
     assert result["messages"][-1].content == "The scaling action was cancelled."

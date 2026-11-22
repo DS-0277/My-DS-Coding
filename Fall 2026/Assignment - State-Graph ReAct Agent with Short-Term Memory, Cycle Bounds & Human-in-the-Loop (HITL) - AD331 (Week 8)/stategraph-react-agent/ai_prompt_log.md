@@ -77,5 +77,5 @@ uv run pytest -v
 1. `Check service metrics for auth-service.` — safe tool runs automatically.
 2. `What service did I just ask you to check?` — shows short-term memory.
 3. `Scale the Kubernetes cluster for auth-service to 5 replicas.` — pauses for human approval; click **Approve action**.
-4. Start a new session, then enter `Transfer 500 USD to recipient ACME-001.` — pauses for approval; click **Reject action**.
+4. Start a new session, then enter `Execute a wire transfer of 500 USD to recipient ACME-001. Use recipient ACME-001 as the account identifier. Do not ask follow-up questions.` — pauses for approval; click **Reject action**.
 5. Turn on **Show duplicate-call detection** in the sidebar — displays the circuit breaker.

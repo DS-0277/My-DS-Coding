@@ -163,6 +163,7 @@ def build_graph(
                 )
             ],
             "pending_tool_call": None,
+            "pending_approval": None,
             "rejected_tool_hashes": [
                 *state.get("rejected_tool_hashes", []),
                 rejected_fingerprint,

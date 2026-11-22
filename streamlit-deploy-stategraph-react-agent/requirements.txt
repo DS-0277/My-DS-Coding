@@ -1,6 +1,0 @@
-langchain-core>=1.8.4
-langchain-openai>=1.8.5
-langgraph>=1.2.24
-pydantic>=2.14.4
-python-dotenv>=1.2.4
-streamlit>=1.67.0

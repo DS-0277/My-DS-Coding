@@ -71,3 +71,11 @@ Run the seven automated graph, memory, circuit-breaker, approval, and rejection 
 ```bash
 uv run pytest -v
 ```
+
+## Live Streamlit Demo Inputs
+
+1. `Check service metrics for auth-service.` — safe tool runs automatically.
+2. `What service did I just ask you to check?` — shows short-term memory.
+3. `Scale the Kubernetes cluster for auth-service to 5 replicas.` — pauses for human approval; click **Approve action**.
+4. Start a new session, then enter `Transfer 500 USD to recipient ACME-001.` — pauses for approval; click **Reject action**.
+5. Turn on **Show duplicate-call detection** in the sidebar — displays the circuit breaker.

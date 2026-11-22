@@ -4,6 +4,6 @@
 
 *2. Source Files:* The source files to the assignment are stored in 'stategraph-react-agent' folder.
 
-*3. YouTube Link:* The explanation is provided via the youtube link as follows:
+*3. YouTube Link:* The explanation is provided via the youtube link as follows: https://youtu.be/QuXbaNb3kVI
 
 *4. Deployment:* The deployment URL is available on: https://app-deploy-stategraph-react-agent-a4nkmarjeggyohdaxkn87k.streamlit.app/

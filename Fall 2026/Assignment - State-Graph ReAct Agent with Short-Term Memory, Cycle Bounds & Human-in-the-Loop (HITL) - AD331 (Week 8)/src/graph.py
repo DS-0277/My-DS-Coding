@@ -27,7 +27,20 @@ cancelled and do not request the same action again."""
 def create_model() -> BaseChatModel:
     """Create the OpenAI chat model used by the agent node."""
     load_dotenv()
-    return ChatOpenAI(model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"), temperature=0)
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        try:
+            import streamlit as st
+
+            api_key = st.secrets.get("OPENAI_API_KEY")
+        except Exception:
+            # Tests and local non-Streamlit imports do not need credentials.
+            api_key = None
+    return ChatOpenAI(
+        model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
+        temperature=0,
+        api_key=api_key,
+    )
 
 
 def _latest_tool_call(state: AgentState) -> dict[str, Any] | None:

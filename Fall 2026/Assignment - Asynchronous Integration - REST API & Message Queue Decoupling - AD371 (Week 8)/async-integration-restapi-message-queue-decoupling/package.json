@@ -1,0 +1,15 @@
+{
+  "name": "async-integration-restapi-message-queue-decoupling",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:api": "node api/server.js",
+    "start:worker": "node worker/worker.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.8",
+    "better-sqlite3": "^12.4.1",
+    "express": "^5.1.0"
+  }
+}

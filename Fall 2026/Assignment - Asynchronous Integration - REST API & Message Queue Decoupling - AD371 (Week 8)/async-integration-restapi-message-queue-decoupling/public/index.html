@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Report Jobs</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 680px; margin: 48px auto; padding: 0 20px; color: #1b1b1b; }
+      input, button { font: inherit; padding: 10px; }
+      input { width: 60%; } button { cursor: pointer; }
+      #result { margin-top: 24px; padding: 16px; background: #f4f4f4; border-radius: 8px; }
+      .status { font-weight: 700; text-transform: uppercase; }
+    </style>
+  </head>
+  <body>
+    <h1>Async Report Generator</h1>
+    <p>Submit a report request. The API returns immediately while a worker processes it.</p>
+    <form id="job-form">
+      <input id="report-name" placeholder="Example: Monthly sales report" required />
+      <button>Submit job</button>
+    </form>
+    <section id="result" hidden></section>
+    <script>
+      const form = document.querySelector("#job-form");
+      const input = document.querySelector("#report-name");
+      const result = document.querySelector("#result");
+      let timer;
+
+      function display(job) {
+        result.hidden = false;
+        result.innerHTML = `<p><strong>Job ID:</strong> ${job.id}</p><p><strong>Report:</strong> ${job.reportName}</p><p class="status">${job.status}</p>`;
+      }
+
+      async function poll(id) {
+        const response = await fetch(`/api/jobs/${id}`);
+        const job = await response.json();
+        display(job);
+        if (["queued", "processing"].includes(job.status)) timer = setTimeout(() => poll(id), 1000);
+      }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        clearTimeout(timer);
+        const response = await fetch("/api/jobs", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ reportName: input.value })
+        });
+        const job = await response.json();
+        display(job);
+        input.value = "";
+        poll(job.id);
+      });
+    </script>
+  </body>
+</html>
